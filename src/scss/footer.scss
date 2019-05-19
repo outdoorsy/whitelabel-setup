@@ -1,0 +1,148 @@
+#trailblazer-footer-wrapper {
+	footer {
+		box-sizing: border-box;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		background: $footer_background;
+		color: $color_3;
+		padding-top: 16px;
+	}
+	.container {
+		box-sizing: border-box;
+		max-width: 1180px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	nav#footer-nav {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.footer-nav__content {
+		margin: 16px;
+		min-width: 150px;
+		max-width: 200px;
+		>.title {
+			margin-bottom: 8px;
+			font-weight: bolder;
+			font-size: 16px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+		li {
+			padding-bottom: 8px;
+		}
+		a {
+			color: $color_4;
+			text-decoration: none;
+			font-size: 14px;
+			&:hover {
+				color: $color_3;
+			}
+		}
+	}
+	.social-networks {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		margin-top: 16px;
+		a {
+			width: 24px;
+			height: 24px;
+			margin-left: 24px;
+			&:first-child {
+				margin-left: 0;
+			}
+			>svg {
+				path {
+					fill: white;
+				}
+			}
+		}
+		a.twitter {
+			&:hover {
+				>svg {
+					path {
+						fill: #1DA1F2;
+					}
+				}
+			}
+		}
+		a.instagram {
+			&:hover {
+				>svg {
+					path {
+						fill: #E4405F;
+					}
+				}
+			}
+		}
+		a.facebook {
+			&:hover {
+				>svg {
+					path {
+						fill: #3B5998;
+					}
+				}
+			}
+		}
+	}
+	.footer-copyright {
+		text-align: center;
+		font-size: 12px;
+		padding: 8px;
+		color: $color_5;
+		background: #333333;
+		a {
+			color: $color_6;
+		}
+  }
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .footer-logo {
+      margin-left: 16px;
+    }
+    #footer-nav {
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-nav__content {
+      width: 100%;
+    }
+    nav#site-navigation {
+      ul {
+        li {
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+}
