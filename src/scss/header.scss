@@ -37,10 +37,10 @@
 				a {
 					text-transform: uppercase;
 					font-weight: bold;
-					color: $color_1;
+					color: $header_links;
 					text-decoration: none;
 					&:hover {
-						color: $color_2;
+						color: $header_links_hover;
 					}
 				}
 			}

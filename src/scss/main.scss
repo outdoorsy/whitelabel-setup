@@ -1,12 +1,11 @@
-$color_1: #888;
-$color_2: #3c3d41;
-$color_3: white;
-$color_4: #d2d1d1;
-$color_5: #ccc;
-$color_6: #ddd;
-
 $header_background: white;
+$header_links: #3c3d41;
+$header_links_hover: #3c3d41;
+
 $footer_background: #3c3d41;
+$footer_links: #d2d1d1;
+$footer_links_hover: white;
+$footer_text: white;
 
 @import 'header';
 @import 'footer';
